@@ -1,0 +1,270 @@
+<node baseType="PrmanShadingNode" name="PxrDisney" ns_fromContext="networkMaterial" ns_viewState="2" selected="true" type="PrmanShadingNode" x="-44.0" y="154.0">
+  <port color="0.2627 0.5686 0.3176" name="baseColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Base Color"/>
+      <entry key="parameterIndex" value="1"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="emitColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Emit Color"/>
+      <entry key="parameterIndex" value="2"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="subsurface" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Subsurface"/>
+      <entry key="parameterIndex" value="3"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="subsurfaceColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Subsurface Color"/>
+      <entry key="parameterIndex" value="4"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="metallic" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Metallic"/>
+      <entry key="parameterIndex" value="5"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="specular" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Specular"/>
+      <entry key="parameterIndex" value="6"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="specularTint" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Specular Tint"/>
+      <entry key="parameterIndex" value="7"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="roughness" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Roughness"/>
+      <entry key="parameterIndex" value="8"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="anisotropic" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Anisotropic"/>
+      <entry key="parameterIndex" value="9"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="sheen" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Sheen"/>
+      <entry key="parameterIndex" value="10"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="sheenTint" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Sheen Tint"/>
+      <entry key="parameterIndex" value="11"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="clearcoat" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Clear Coat"/>
+      <entry key="parameterIndex" value="12"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="clearcoatGloss" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Clearcoat Gloss"/>
+      <entry key="parameterIndex" value="13"/>
+    </metadata>
+  </port>
+  <port color="0.5686 0.2980 0.1882" name="bumpNormal" type="in">
+    <tags>
+      <tag name="normal"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Bump Normal"/>
+      <entry key="parameterIndex" value="14"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="presence" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Presence"/>
+      <entry key="parameterIndex" value="16"/>
+    </metadata>
+  </port>
+  <port color="0.1843 0.4863 0.4824" name="inputAOV" type="in">
+    <tags>
+      <tag name="int"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Input AOV"/>
+      <entry key="parameterIndex" value="17"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="bxdf_out" type="out">
+    <tags>
+      <tag name="bxdf"/>
+    </tags>
+  </port>
+  <group_parameter name="PxrDisney">
+    <string_parameter name="name" value="PxrDisney"/>
+    <string_parameter name="nodeType" value="PxrDisney"/>
+    <string_parameter name="__lastValue" value="hlr7u2zfzkb75qgmns6nksfgeeus4o45r74kypu2dcdvuqzkquamFalse"/>
+    <string_parameter name="__showHiddenParams" value="False"/>
+    <group_parameter name="parameters">
+      <group_parameter name="baseColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0.2"/>
+          <number_parameter name="i1" value="0.5"/>
+          <number_parameter name="i2" value="0.8"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="emitColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurface">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="metallic">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="specular">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0.5"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="specularTint">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="roughness">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0.25"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="anisotropic">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="sheen">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="sheenTint">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0.5"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoat">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatGloss">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="bumpNormal">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="shadowBumpTerminator">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="presence">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="inputAOV">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="__unused"/>
+    </group_parameter>
+    <group_parameter name="publicInterface">
+      <string_parameter name="namePrefix" value=""/>
+      <string_parameter name="pagePrefix" value=""/>
+      <string_parameter name="nameRegExFind" value=""/>
+      <string_parameter name="nameRegExReplace" value=""/>
+      <string_parameter name="pageRegExFind" value=""/>
+      <string_parameter name="pageRegExReplace" value=""/>
+    </group_parameter>
+    <string_parameter name="forceRefresh" value=""/>
+  </group_parameter>
+</node>

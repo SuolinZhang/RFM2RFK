@@ -1,0 +1,253 @@
+<node baseType="PrmanShadingNode" name="PxrNormalMap" ns_fromContext="networkMaterial" ns_viewState="2" selected="true" type="PrmanShadingNode" x="3.0" y="133.0">
+  <port color="0.2471 0.3686 0.5725" name="bumpScale" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Bump Scale"/>
+      <entry key="parameterIndex" value="1"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="inputRGB" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Input Normal"/>
+      <entry key="parameterIndex" value="2"/>
+    </metadata>
+  </port>
+  <port color="0.5686 0.2980 0.1882" name="bumpOverlay" type="in">
+    <tags>
+      <tag name="normal"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Bump Overlay"/>
+      <entry key="parameterIndex" value="4"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="blur" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Blur"/>
+      <entry key="page" value="Mapping Controls"/>
+      <entry key="parameterIndex" value="12"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="manifold" type="in">
+    <tags>
+      <tag name="Manifold"/>
+    </tags>
+    <metadata>
+      <entry key="page" value=""/>
+      <entry key="parameterIndex" value="16"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="maxResolution" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Max Resolution"/>
+      <entry key="page" value="Mapping Controls.Advanced Texture Settings"/>
+      <entry key="parameterIndex" value="18"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="adjustAmount" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Adjust Amount"/>
+      <entry key="page" value="Advanced"/>
+      <entry key="parameterIndex" value="21"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="surfaceNormalMix" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Surface Normal Mix"/>
+      <entry key="page" value="Advanced"/>
+      <entry key="parameterIndex" value="22"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="resultN" type="out">
+    <tags>
+      <tag name="color"/>
+      <tag name="normal"/>
+      <tag name="point"/>
+      <tag name="vector"/>
+    </tags>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="resultNG" type="out">
+    <tags>
+      <tag name="color"/>
+      <tag name="normal"/>
+      <tag name="point"/>
+      <tag name="vector"/>
+    </tags>
+  </port>
+  <group_parameter name="PxrNormalMap">
+    <string_parameter name="name" value="PxrNormalMap"/>
+    <string_parameter name="nodeType" value="PxrNormalMap"/>
+    <string_parameter name="__lastValue" value="5rap7ql6qrleaghi74laia7ws46klezurnnn6ynhxuryknc72lwmFalse"/>
+    <string_parameter name="__showHiddenParams" value="False"/>
+    <group_parameter name="parameters">
+      <group_parameter name="bumpScale">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="inputRGB">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="filename">
+        <number_parameter name="enable" value="0"/>
+        <string_parameter name="value" value=""/>
+        <string_parameter name="type" value="StringAttr"/>
+      </group_parameter>
+      <group_parameter name="bumpOverlay">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="invertBump">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="orientation">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="2"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="flipX">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="flipY">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="firstChannel">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="atlasStyle">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="invertT">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="blur">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="lerp">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="filter">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="smoothRayDerivs">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="manifold">
+        <number_parameter name="enable" value="0"/>
+        <string_parameter name="value" value=""/>
+        <string_parameter name="type" value="StringAttr"/>
+      </group_parameter>
+      <group_parameter name="mipBias">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="maxResolution">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="optimizeIndirect">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="reverse">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="adjustAmount">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="surfaceNormalMix">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="disable">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="resultN">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="resultNG">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="__unused"/>
+    </group_parameter>
+    <group_parameter name="publicInterface">
+      <string_parameter name="namePrefix" value=""/>
+      <string_parameter name="pagePrefix" value=""/>
+      <string_parameter name="nameRegExFind" value=""/>
+      <string_parameter name="nameRegExReplace" value=""/>
+      <string_parameter name="pageRegExFind" value=""/>
+      <string_parameter name="pageRegExReplace" value=""/>
+    </group_parameter>
+    <string_parameter name="forceRefresh" value=""/>
+  </group_parameter>
+</node>

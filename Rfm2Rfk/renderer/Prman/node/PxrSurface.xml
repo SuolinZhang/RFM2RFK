@@ -1,0 +1,2067 @@
+<node baseType="PrmanShadingNode" name="PxrSurface" selected="true" ns_fromContext="networkMaterial" type="PrmanShadingNode">
+  <port color="0.2627 0.5686 0.3176" name="inputMaterial" type="in">
+    <tags>
+      <tag name="vstruct"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Input Material"/>
+      <entry key="parameterIndex" value="1"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="diffuseGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Gain"/>
+      <entry key="page" value="Diffuse"/>
+      <entry key="parameterIndex" value="2"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="diffuseColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Color"/>
+      <entry key="page" value="Diffuse"/>
+      <entry key="parameterIndex" value="3"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="diffuseRoughness" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Roughness"/>
+      <entry key="page" value="Diffuse"/>
+      <entry key="parameterIndex" value="4"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="diffuseExponent" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Exponent"/>
+      <entry key="page" value="Diffuse.Advanced"/>
+      <entry key="parameterIndex" value="5"/>
+    </metadata>
+  </port>
+  <port color="0.5686 0.2980 0.1882" name="diffuseBumpNormal" type="in">
+    <tags>
+      <tag name="normal"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Bump"/>
+      <entry key="page" value="Diffuse.Advanced"/>
+      <entry key="parameterIndex" value="6"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="diffuseBackColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Back Color"/>
+      <entry key="page" value="Diffuse.Advanced"/>
+      <entry key="parameterIndex" value="9"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="diffuseTransmitGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Transmit Gain"/>
+      <entry key="page" value="Diffuse.Advanced"/>
+      <entry key="parameterIndex" value="10"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="diffuseTransmitColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Transmit Color"/>
+      <entry key="page" value="Diffuse.Advanced"/>
+      <entry key="parameterIndex" value="11"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="specularFaceColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Face Color"/>
+      <entry key="page" value="Primary Specular"/>
+      <entry key="parameterIndex" value="13"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="specularEdgeColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Edge Color"/>
+      <entry key="page" value="Primary Specular"/>
+      <entry key="parameterIndex" value="14"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="specularFresnelShape" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Fresnel Exponent"/>
+      <entry key="page" value="Primary Specular"/>
+      <entry key="parameterIndex" value="15"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="specularIor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Refraction Index"/>
+      <entry key="page" value="Primary Specular"/>
+      <entry key="parameterIndex" value="16"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="specularExtinctionCoeff" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Extinction Coefficient"/>
+      <entry key="page" value="Primary Specular"/>
+      <entry key="parameterIndex" value="17"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="specularRoughness" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Roughness"/>
+      <entry key="page" value="Primary Specular"/>
+      <entry key="parameterIndex" value="18"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="specularAnisotropy" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Anisotropy"/>
+      <entry key="page" value="Primary Specular.Advanced"/>
+      <entry key="parameterIndex" value="20"/>
+    </metadata>
+  </port>
+  <port color="0.4157 0.4431 0.5882" name="specularAnisotropyDirection" type="in">
+    <tags>
+      <tag name="vector"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Shading Tangent"/>
+      <entry key="page" value="Primary Specular.Advanced"/>
+      <entry key="parameterIndex" value="21"/>
+    </metadata>
+  </port>
+  <port color="0.5686 0.2980 0.1882" name="specularBumpNormal" type="in">
+    <tags>
+      <tag name="normal"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Bump"/>
+      <entry key="page" value="Primary Specular.Advanced"/>
+      <entry key="parameterIndex" value="22"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="roughSpecularFaceColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Face Color"/>
+      <entry key="page" value="Rough Specular"/>
+      <entry key="parameterIndex" value="25"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="roughSpecularEdgeColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Edge Color"/>
+      <entry key="page" value="Rough Specular"/>
+      <entry key="parameterIndex" value="26"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="roughSpecularFresnelShape" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Fresnel Exponent"/>
+      <entry key="page" value="Rough Specular"/>
+      <entry key="parameterIndex" value="27"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="roughSpecularIor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Refraction Index"/>
+      <entry key="page" value="Rough Specular"/>
+      <entry key="parameterIndex" value="28"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="roughSpecularExtinctionCoeff" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Extinction Coefficient"/>
+      <entry key="page" value="Rough Specular"/>
+      <entry key="parameterIndex" value="29"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="roughSpecularRoughness" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Roughness"/>
+      <entry key="page" value="Rough Specular"/>
+      <entry key="parameterIndex" value="30"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="roughSpecularAnisotropy" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Anisotropy"/>
+      <entry key="page" value="Rough Specular.Advanced"/>
+      <entry key="parameterIndex" value="32"/>
+    </metadata>
+  </port>
+  <port color="0.4157 0.4431 0.5882" name="roughSpecularAnisotropyDirection" type="in">
+    <tags>
+      <tag name="vector"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Shading Tangent"/>
+      <entry key="page" value="Rough Specular.Advanced"/>
+      <entry key="parameterIndex" value="33"/>
+    </metadata>
+  </port>
+  <port color="0.5686 0.2980 0.1882" name="roughSpecularBumpNormal" type="in">
+    <tags>
+      <tag name="normal"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Bump"/>
+      <entry key="page" value="Rough Specular.Advanced"/>
+      <entry key="parameterIndex" value="34"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="clearcoatFaceColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Face Color"/>
+      <entry key="page" value="Clear Coat"/>
+      <entry key="parameterIndex" value="37"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="clearcoatEdgeColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Edge Color"/>
+      <entry key="page" value="Clear Coat"/>
+      <entry key="parameterIndex" value="38"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="clearcoatFresnelShape" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Fresnel Exponent"/>
+      <entry key="page" value="Clear Coat"/>
+      <entry key="parameterIndex" value="39"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="clearcoatIor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Refraction Index"/>
+      <entry key="page" value="Clear Coat"/>
+      <entry key="parameterIndex" value="40"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="clearcoatExtinctionCoeff" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Extinction Coefficient"/>
+      <entry key="page" value="Clear Coat"/>
+      <entry key="parameterIndex" value="41"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="clearcoatThickness" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Layer Thickness"/>
+      <entry key="page" value="Clear Coat"/>
+      <entry key="parameterIndex" value="42"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="clearcoatAbsorptionTint" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Absorption Tint"/>
+      <entry key="page" value="Clear Coat"/>
+      <entry key="parameterIndex" value="43"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="clearcoatRoughness" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Roughness"/>
+      <entry key="page" value="Clear Coat"/>
+      <entry key="parameterIndex" value="44"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="clearcoatAnisotropy" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Anisotropy"/>
+      <entry key="page" value="Clear Coat.Advanced"/>
+      <entry key="parameterIndex" value="46"/>
+    </metadata>
+  </port>
+  <port color="0.4157 0.4431 0.5882" name="clearcoatAnisotropyDirection" type="in">
+    <tags>
+      <tag name="vector"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Shading Tangent"/>
+      <entry key="page" value="Clear Coat.Advanced"/>
+      <entry key="parameterIndex" value="47"/>
+    </metadata>
+  </port>
+  <port color="0.5686 0.2980 0.1882" name="clearcoatBumpNormal" type="in">
+    <tags>
+      <tag name="normal"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Bump"/>
+      <entry key="page" value="Clear Coat.Advanced"/>
+      <entry key="parameterIndex" value="48"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="iridescenceFaceGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Face gain"/>
+      <entry key="page" value="Iridescence"/>
+      <entry key="parameterIndex" value="52"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="iridescenceEdgeGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Edge gain"/>
+      <entry key="page" value="Iridescence"/>
+      <entry key="parameterIndex" value="53"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="iridescenceFresnelShape" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Fresnel Exponent"/>
+      <entry key="page" value="Iridescence"/>
+      <entry key="parameterIndex" value="54"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="iridescencePrimaryColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Primary Color"/>
+      <entry key="page" value="Iridescence"/>
+      <entry key="parameterIndex" value="56"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="iridescenceSecondaryColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Secondary Color"/>
+      <entry key="page" value="Iridescence"/>
+      <entry key="parameterIndex" value="57"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="iridescenceRoughness" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Roughness"/>
+      <entry key="page" value="Iridescence"/>
+      <entry key="parameterIndex" value="58"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="iridescenceAnisotropy" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Anisotropy"/>
+      <entry key="page" value="Iridescence.Advanced"/>
+      <entry key="parameterIndex" value="59"/>
+    </metadata>
+  </port>
+  <port color="0.4157 0.4431 0.5882" name="iridescenceAnisotropyDirection" type="in">
+    <tags>
+      <tag name="vector"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Shading Tangent"/>
+      <entry key="page" value="Iridescence.Advanced"/>
+      <entry key="parameterIndex" value="60"/>
+    </metadata>
+  </port>
+  <port color="0.5686 0.2980 0.1882" name="iridescenceBumpNormal" type="in">
+    <tags>
+      <tag name="normal"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Bump"/>
+      <entry key="page" value="Iridescence.Advanced"/>
+      <entry key="parameterIndex" value="61"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="iridescenceCurve" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Falloff Speed"/>
+      <entry key="page" value="Iridescence.Advanced"/>
+      <entry key="parameterIndex" value="62"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="iridescenceScale" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Falloff Scale"/>
+      <entry key="page" value="Iridescence.Advanced"/>
+      <entry key="parameterIndex" value="63"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="iridescenceThickness" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Thin Film Thickness"/>
+      <entry key="page" value="Iridescence.Advanced"/>
+      <entry key="parameterIndex" value="65"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="fuzzGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Gain"/>
+      <entry key="page" value="Fuzz"/>
+      <entry key="parameterIndex" value="67"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="fuzzColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Color"/>
+      <entry key="page" value="Fuzz"/>
+      <entry key="parameterIndex" value="68"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="fuzzConeAngle" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Cone Angle"/>
+      <entry key="page" value="Fuzz"/>
+      <entry key="parameterIndex" value="69"/>
+    </metadata>
+  </port>
+  <port color="0.5686 0.2980 0.1882" name="fuzzBumpNormal" type="in">
+    <tags>
+      <tag name="normal"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Bump"/>
+      <entry key="page" value="Fuzz.Advanced"/>
+      <entry key="parameterIndex" value="70"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="subsurfaceGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Gain"/>
+      <entry key="page" value="Subsurface"/>
+      <entry key="parameterIndex" value="73"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="subsurfaceColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Color"/>
+      <entry key="page" value="Subsurface"/>
+      <entry key="parameterIndex" value="74"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="subsurfaceDmfp" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Mean Free Path Distance"/>
+      <entry key="page" value="Subsurface"/>
+      <entry key="parameterIndex" value="75"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="subsurfaceDmfpColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Mean Free Path Color"/>
+      <entry key="page" value="Subsurface"/>
+      <entry key="parameterIndex" value="76"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="shortSubsurfaceGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Short Gain"/>
+      <entry key="page" value="Subsurface"/>
+      <entry key="parameterIndex" value="77"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="shortSubsurfaceColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Short Color"/>
+      <entry key="page" value="Subsurface"/>
+      <entry key="parameterIndex" value="78"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="shortSubsurfaceDmfp" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Short MFP Distance"/>
+      <entry key="page" value="Subsurface"/>
+      <entry key="parameterIndex" value="79"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="longSubsurfaceGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Long Gain"/>
+      <entry key="page" value="Subsurface"/>
+      <entry key="parameterIndex" value="80"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="longSubsurfaceColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Long Color"/>
+      <entry key="page" value="Subsurface"/>
+      <entry key="parameterIndex" value="81"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="longSubsurfaceDmfp" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Long MFP Distance"/>
+      <entry key="page" value="Subsurface"/>
+      <entry key="parameterIndex" value="82"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="subsurfaceDirectionality" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Directionality"/>
+      <entry key="page" value="Subsurface"/>
+      <entry key="parameterIndex" value="83"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="subsurfaceBleed" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Bleed"/>
+      <entry key="page" value="Subsurface"/>
+      <entry key="parameterIndex" value="84"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="subsurfaceDiffuseBlend" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Diffuse Blend"/>
+      <entry key="page" value="Subsurface"/>
+      <entry key="parameterIndex" value="85"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="subsurfacePostTint" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Post Tint"/>
+      <entry key="page" value="Subsurface.Advanced"/>
+      <entry key="parameterIndex" value="88"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="subsurfaceTransmitGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Transmit Gain"/>
+      <entry key="page" value="Subsurface.Advanced"/>
+      <entry key="parameterIndex" value="91"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="followTopology" type="in">
+    <metadata>
+      <entry key="label" value="Follow Topology"/>
+      <entry key="page" value="Subsurface.Trace Control"/>
+      <entry key="parameterIndex" value="95"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="singlescatterGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Gain"/>
+      <entry key="page" value="Single Scatter"/>
+      <entry key="parameterIndex" value="97"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="singlescatterColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Color"/>
+      <entry key="page" value="Single Scatter"/>
+      <entry key="parameterIndex" value="98"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="singlescatterMfp" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Mean Free Path"/>
+      <entry key="page" value="Single Scatter"/>
+      <entry key="parameterIndex" value="99"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="singlescatterMfpColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Mean Free Path Color"/>
+      <entry key="page" value="Single Scatter"/>
+      <entry key="parameterIndex" value="100"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="singlescatterDirectionality" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Directionality"/>
+      <entry key="page" value="Single Scatter.Advanced"/>
+      <entry key="parameterIndex" value="101"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="singlescatterIor" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Refractive Index"/>
+      <entry key="page" value="Single Scatter.Advanced"/>
+      <entry key="parameterIndex" value="102"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="singlescatterBlur" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Blur"/>
+      <entry key="page" value="Single Scatter.Advanced"/>
+      <entry key="parameterIndex" value="103"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="singlescatterDirectGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Backside Direct Gain"/>
+      <entry key="page" value="Single Scatter.Advanced"/>
+      <entry key="parameterIndex" value="104"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="singlescatterDirectGainTint" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Direct Gain Tint"/>
+      <entry key="page" value="Single Scatter.Advanced"/>
+      <entry key="parameterIndex" value="105"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="irradianceTint" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Irradiance Tint"/>
+      <entry key="page" value="Scattering Globals"/>
+      <entry key="parameterIndex" value="112"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="irradianceRoughness" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Irradiance Roughness"/>
+      <entry key="page" value="Scattering Globals"/>
+      <entry key="parameterIndex" value="113"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="refractionGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Refraction Gain"/>
+      <entry key="page" value="Glass"/>
+      <entry key="parameterIndex" value="115"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="reflectionGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Reflection Gain"/>
+      <entry key="page" value="Glass"/>
+      <entry key="parameterIndex" value="116"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="refractionColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Refraction Color"/>
+      <entry key="page" value="Glass"/>
+      <entry key="parameterIndex" value="117"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="glassRoughness" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Roughness"/>
+      <entry key="page" value="Glass"/>
+      <entry key="parameterIndex" value="118"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="glassRefractionRoughness" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Refraction Roughness"/>
+      <entry key="page" value="Glass"/>
+      <entry key="parameterIndex" value="119"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="glassRefraction2Roughness" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Refraction 2 Roughness"/>
+      <entry key="page" value="Glass"/>
+      <entry key="parameterIndex" value="120"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="glassRefraction2Blend" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Refraction 2 Roughness Blend Factor"/>
+      <entry key="page" value="Glass"/>
+      <entry key="parameterIndex" value="121"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="glassRefraction2Tint" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Refraction 2 Tint"/>
+      <entry key="page" value="Glass"/>
+      <entry key="parameterIndex" value="122"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="glassAnisotropy" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Anisotropy"/>
+      <entry key="page" value="Glass.Advanced"/>
+      <entry key="parameterIndex" value="123"/>
+    </metadata>
+  </port>
+  <port color="0.4157 0.4431 0.5882" name="glassAnisotropyDirection" type="in">
+    <tags>
+      <tag name="vector"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Shading Tangent"/>
+      <entry key="page" value="Glass.Advanced"/>
+      <entry key="parameterIndex" value="124"/>
+    </metadata>
+  </port>
+  <port color="0.5686 0.2980 0.1882" name="glassBumpNormal" type="in">
+    <tags>
+      <tag name="normal"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Bump"/>
+      <entry key="page" value="Glass.Advanced"/>
+      <entry key="parameterIndex" value="125"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="glassIor" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Refractive Index"/>
+      <entry key="page" value="Glass.Advanced"/>
+      <entry key="parameterIndex" value="126"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="mwIor" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Manifold Walk IOR"/>
+      <entry key="page" value="Glass.Advanced"/>
+      <entry key="parameterIndex" value="128"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="volumeAggregate" type="in">
+    <metadata>
+      <entry key="page" value="Glass.Interior"/>
+      <entry key="parameterIndex" value="133"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="ssAlbedo" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Single Scatter Albedo"/>
+      <entry key="page" value="Glass.Interior"/>
+      <entry key="parameterIndex" value="135"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="extinction" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Extinction"/>
+      <entry key="page" value="Glass.Interior"/>
+      <entry key="parameterIndex" value="136"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="g0" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="g0"/>
+      <entry key="page" value="Glass.Interior.Advanced"/>
+      <entry key="parameterIndex" value="137"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="g1" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="g1"/>
+      <entry key="page" value="Glass.Interior.Advanced"/>
+      <entry key="parameterIndex" value="138"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="blend" type="in">
+    <metadata>
+      <entry key="label" value="Blend"/>
+      <entry key="page" value="Glass.Interior.Advanced"/>
+      <entry key="parameterIndex" value="139"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="volumeGlow" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Volume Glow"/>
+      <entry key="page" value="Glass.Interior.Advanced"/>
+      <entry key="parameterIndex" value="140"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="glowGain" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Gain"/>
+      <entry key="page" value="Glow"/>
+      <entry key="parameterIndex" value="144"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="glowColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Color"/>
+      <entry key="page" value="Glow"/>
+      <entry key="parameterIndex" value="145"/>
+    </metadata>
+  </port>
+  <port color="0.5686 0.2980 0.1882" name="bumpNormal" type="in">
+    <tags>
+      <tag name="normal"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Bump"/>
+      <entry key="page" value="Globals"/>
+      <entry key="parameterIndex" value="146"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="shadowColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Shadow Color"/>
+      <entry key="page" value="Globals"/>
+      <entry key="parameterIndex" value="148"/>
+    </metadata>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="presence" type="in">
+    <tags>
+      <tag name="float"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Presence"/>
+      <entry key="page" value="Globals"/>
+      <entry key="parameterIndex" value="150"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="userColor" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="User Color"/>
+      <entry key="page" value="Globals"/>
+      <entry key="parameterIndex" value="154"/>
+    </metadata>
+  </port>
+  <port color="0.1843 0.4863 0.4824" name="utilityPattern" type="in">
+    <tags>
+      <tag name="int"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Utility Pattern"/>
+      <entry key="parameterIndex" value="155"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="bxdf_out" type="out">
+    <tags>
+      <tag name="bxdf"/>
+    </tags>
+  </port>
+  <group_parameter name="PxrSurface">
+    <string_parameter name="name" value="PxrSurface"/>
+    <string_parameter name="nodeType" value="PxrSurface"/>
+    <string_parameter name="__lastValue" value="wzdrtwzyk2ycgyj54dqoqlfewy7mkpvlbdw7px5mskhduq4w6fniFalse"/>
+    <string_parameter name="__showHiddenParams" value="False"/>
+    <group_parameter name="parameters">
+      <group_parameter name="inputMaterial">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="diffuseGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="diffuseColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0.18"/>
+          <number_parameter name="i1" value="0.18"/>
+          <number_parameter name="i2" value="0.18"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="diffuseRoughness">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="diffuseExponent">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="diffuseBumpNormal">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="diffuseDoubleSided">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="diffuseBackUseDiffuseColor">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="diffuseBackColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0.18"/>
+          <number_parameter name="i1" value="0.18"/>
+          <number_parameter name="i2" value="0.18"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="diffuseTransmitGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="diffuseTransmitColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0.18"/>
+          <number_parameter name="i1" value="0.18"/>
+          <number_parameter name="i2" value="0.18"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="specularFresnelMode">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="specularFaceColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="specularEdgeColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="specularFresnelShape">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="5"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="specularIor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="1.5"/>
+          <number_parameter name="i1" value="1.5"/>
+          <number_parameter name="i2" value="1.5"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="specularExtinctionCoeff">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="specularRoughness">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0.2"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="specularModelType">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="specularAnisotropy">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="specularAnisotropyDirection">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="specularBumpNormal">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="specularDoubleSided">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="roughSpecularFresnelMode">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="roughSpecularFaceColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="roughSpecularEdgeColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="roughSpecularFresnelShape">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="5"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="roughSpecularIor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="1.5"/>
+          <number_parameter name="i1" value="1.5"/>
+          <number_parameter name="i2" value="1.5"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="roughSpecularExtinctionCoeff">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="roughSpecularRoughness">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0.6"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="roughSpecularModelType">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="roughSpecularAnisotropy">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="roughSpecularAnisotropyDirection">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="roughSpecularBumpNormal">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="roughSpecularDoubleSided">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatFresnelMode">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatFaceColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatEdgeColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatFresnelShape">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="5"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatIor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="1.5"/>
+          <number_parameter name="i1" value="1.5"/>
+          <number_parameter name="i2" value="1.5"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatExtinctionCoeff">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatThickness">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatAbsorptionTint">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatRoughness">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatModelType">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatAnisotropy">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatAnisotropyDirection">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatBumpNormal">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatDoubleSided">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="specularEnergyCompensation">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="clearcoatEnergyCompensation">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceFaceGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceEdgeGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceFresnelShape">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="5"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceMode">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescencePrimaryColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="1"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceSecondaryColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="1"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceRoughness">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0.2"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceAnisotropy">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceAnisotropyDirection">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceBumpNormal">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceCurve">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceScale">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceFlip">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceThickness">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="800"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="iridescenceDoubleSided">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="fuzzGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="fuzzColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="1"/>
+          <number_parameter name="i1" value="1"/>
+          <number_parameter name="i2" value="1"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="fuzzConeAngle">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="8"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="fuzzBumpNormal">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="fuzzDoubleSided">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceType">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="5"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0.83"/>
+          <number_parameter name="i1" value="0.791"/>
+          <number_parameter name="i2" value="0.753"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceDmfp">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="10"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceDmfpColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0.851"/>
+          <number_parameter name="i1" value="0.5570000000000001"/>
+          <number_parameter name="i2" value="0.395"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="shortSubsurfaceGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="shortSubsurfaceColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0.9"/>
+          <number_parameter name="i1" value="0.9"/>
+          <number_parameter name="i2" value="0.9"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="shortSubsurfaceDmfp">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="5"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="longSubsurfaceGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="longSubsurfaceColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0.8"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="longSubsurfaceDmfp">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="20"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceDirectionality">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceBleed">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceDiffuseBlend">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceResolveSelfIntersections">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceIor">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1.4"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfacePostTint">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="1"/>
+          <number_parameter name="i1" value="1"/>
+          <number_parameter name="i2" value="1"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceDiffuseSwitch">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceDoubleSided">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceTransmitGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="considerBackside">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="continuationRayMode">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="maxContinuationHits">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="2"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="followTopology">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="subsurfaceSubset">
+        <number_parameter name="enable" value="0"/>
+        <string_parameter name="value" value=""/>
+        <string_parameter name="type" value="StringAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0.83"/>
+          <number_parameter name="i1" value="0.791"/>
+          <number_parameter name="i2" value="0.753"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterMfp">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="10"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterMfpColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0.851"/>
+          <number_parameter name="i1" value="0.5570000000000001"/>
+          <number_parameter name="i2" value="0.395"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterDirectionality">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterIor">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1.3"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterBlur">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterDirectGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterDirectGainTint">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="1"/>
+          <number_parameter name="i1" value="1"/>
+          <number_parameter name="i2" value="1"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterDoubleSided">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterConsiderBackside">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterContinuationRayMode">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterMaxContinuationHits">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="2"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterDirectGainMode">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="singlescatterSubset">
+        <number_parameter name="enable" value="0"/>
+        <string_parameter name="value" value=""/>
+        <string_parameter name="type" value="StringAttr"/>
+      </group_parameter>
+      <group_parameter name="irradianceTint">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="1"/>
+          <number_parameter name="i1" value="1"/>
+          <number_parameter name="i2" value="1"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="irradianceRoughness">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="unitLength">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0.1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="refractionGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="reflectionGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="refractionColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="1"/>
+          <number_parameter name="i1" value="1"/>
+          <number_parameter name="i2" value="1"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="glassRoughness">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0.1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="glassRefractionRoughness">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="-1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="glassRefraction2Roughness">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="glassRefraction2Blend">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="glassRefraction2Tint">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="1"/>
+          <number_parameter name="i1" value="1"/>
+          <number_parameter name="i2" value="1"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="glassAnisotropy">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="glassAnisotropyDirection">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="glassBumpNormal">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="glassIor">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1.5"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="mwWalkable">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="mwIor">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="-1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="thinGlass">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="ignoreFresnel">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="ignoreAccumOpacity">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="blocksVolumes">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="volumeAggregate">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="volumeAggregateName">
+        <number_parameter name="enable" value="0"/>
+        <string_parameter name="value" value="interiorVolumeAggregate"/>
+        <string_parameter name="type" value="StringAttr"/>
+      </group_parameter>
+      <group_parameter name="ssAlbedo">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="extinction">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="g0">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="g1">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="blend">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="volumeGlow">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="maxExtinction">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="-1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="multiScatter">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="enableOverlappingVolumes">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="glowGain">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="glowColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="1"/>
+          <number_parameter name="i1" value="1"/>
+          <number_parameter name="i2" value="1"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="bumpNormal">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="shadowBumpTerminator">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="shadowColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="shadowMode">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="presence">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="presenceCached">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="1"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="mwStartable">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="roughnessMollificationClamp">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="32"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="userColor">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="utilityPattern">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="isDynamicArray" value="1"/>
+        <numberarray_parameter name="value" size="1" tupleSize="1">
+          <number_parameter name="i0" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="__unused"/>
+    </group_parameter>
+    <group_parameter name="publicInterface">
+      <string_parameter name="namePrefix" value=""/>
+      <string_parameter name="pagePrefix" value=""/>
+      <string_parameter name="nameRegExFind" value=""/>
+      <string_parameter name="nameRegExReplace" value=""/>
+      <string_parameter name="pageRegExFind" value=""/>
+      <string_parameter name="pageRegExReplace" value=""/>
+    </group_parameter>
+    <string_parameter name="forceRefresh" value=""/>
+  </group_parameter>
+</node>

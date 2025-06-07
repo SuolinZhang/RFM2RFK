@@ -1,0 +1,122 @@
+<node baseType="PrmanShadingNode" name="PxrChecker" ns_fromContext="networkMaterial" ns_viewState="2" selected="true" type="PrmanShadingNode" x="-1257.93" y="-480.358">
+  <port color="0.2627 0.5686 0.3176" name="colorA" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Color A"/>
+      <entry key="parameterIndex" value="1"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="colorB" type="in">
+    <tags>
+      <tag name="color"/>
+    </tags>
+    <metadata>
+      <entry key="label" value="Color B"/>
+      <entry key="parameterIndex" value="2"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="manifold" type="in">
+    <tags>
+      <tag name="Manifold"/>
+    </tags>
+    <metadata>
+      <entry key="page" value=""/>
+      <entry key="parameterIndex" value="4"/>
+    </metadata>
+  </port>
+  <port color="0.2627 0.5686 0.3176" name="resultRGB" type="out">
+    <tags>
+      <tag name="color"/>
+      <tag name="normal"/>
+      <tag name="point"/>
+      <tag name="vector"/>
+    </tags>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="resultR" type="out">
+    <tags>
+      <tag name="float"/>
+    </tags>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="resultG" type="out">
+    <tags>
+      <tag name="float"/>
+    </tags>
+  </port>
+  <port color="0.2471 0.3686 0.5725" name="resultB" type="out">
+    <tags>
+      <tag name="float"/>
+    </tags>
+  </port>
+  <group_parameter name="PxrChecker">
+    <string_parameter name="name" value="PxrChecker"/>
+    <string_parameter name="nodeType" value="PxrChecker"/>
+    <string_parameter name="__lastValue" value="jbuclgyjarjrbxo64bar4tasxeclhi3mqbh7jk43cvmfalneu6zqFalse"/>
+    <string_parameter name="__showHiddenParams" value="False"/>
+    <group_parameter name="parameters">
+      <group_parameter name="colorA">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="1"/>
+          <number_parameter name="i1" value="1"/>
+          <number_parameter name="i2" value="1"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="colorB">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="dimensions">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="2"/>
+        <string_parameter name="type" value="IntAttr"/>
+      </group_parameter>
+      <group_parameter name="manifold">
+        <number_parameter name="enable" value="0"/>
+        <string_parameter name="value" value=""/>
+        <string_parameter name="type" value="StringAttr"/>
+      </group_parameter>
+      <group_parameter name="resultRGB">
+        <number_parameter name="enable" value="0"/>
+        <numberarray_parameter name="value" size="3" tupleSize="3">
+          <number_parameter name="i0" value="0"/>
+          <number_parameter name="i1" value="0"/>
+          <number_parameter name="i2" value="0"/>
+        </numberarray_parameter>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="resultR">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="resultG">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="resultB">
+        <number_parameter name="enable" value="0"/>
+        <number_parameter name="value" value="0"/>
+        <string_parameter name="type" value="FloatAttr"/>
+      </group_parameter>
+      <group_parameter name="__unused"/>
+    </group_parameter>
+    <group_parameter name="publicInterface">
+      <string_parameter name="namePrefix" value=""/>
+      <string_parameter name="pagePrefix" value=""/>
+      <string_parameter name="nameRegExFind" value=""/>
+      <string_parameter name="nameRegExReplace" value=""/>
+      <string_parameter name="pageRegExFind" value=""/>
+      <string_parameter name="pageRegExReplace" value=""/>
+    </group_parameter>
+    <string_parameter name="forceRefresh" value=""/>
+  </group_parameter>
+</node>
