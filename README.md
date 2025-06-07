@@ -40,7 +40,7 @@ PxrChecker, PxrDisney, PxrNormalMap, PxrSurface, PxrTexture
 ## Note
 1. As this tool was designed for my Pipeline assignment studying in NCCA Bournemouth University, the supported nodes are quite few for now, DIY is encouraged for this tool.
 2. MayaBase is a module I wrote in the past, It contains a seperate readme file. Rfm2Rkf was written upon Mayabase.
-3. The structure of the tool was referred to ababak's maya2katana, while the main body of code is different. Check out this link if interested:github.com/ababak/maya2katana.
+3. The structure of the tool was referred to ababak's maya2katana, while the main body of code is different. Check out this link if interested: github.com/ababak/maya2katana.
 
 ## Contact
 Feel free to reach me out if you have any questions.
